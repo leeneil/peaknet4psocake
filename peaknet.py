@@ -42,4 +42,19 @@ class peaknet():
         dn.free_ptrs(dn.cast(probs, dn.POINTER(dn.c_void_p)), num)
         return res
 
+        def peaknet2psana( results ):
+        nPeaks = 0
+        for u in range(len(results)):
+            nPeaks += len(results[u])
+        s = np.zeros( (nPeaks,1) )
+        r = np.zeros( (nPeaks,1) )
+        c = np.zeros( (nPeaks,1) )
+        counter = 0
+        for u in range(len(results)):
+            for v in range(len(results[u])):
+                s[counter] = u
+                r[counter] = results[u][v][1][1]
+                c[counter] = results[u][v][1][0]
+                counter += 1
+        return s, r, c
         
