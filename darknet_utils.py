@@ -1,7 +1,8 @@
 import numpy as np
 
 def array2image(dn, arr):
-    arr = np.reshape(arr, (192, 192, 1))
+    #print(arr.shape)
+    arr = np.reshape(arr, (arr.shape[0], arr.shape[1], 1))
     arr = np.concatenate( (arr, arr, arr), axis=2)
     arr = arr.transpose(2,0,1)
     c = 3 #arr.shape[0]
