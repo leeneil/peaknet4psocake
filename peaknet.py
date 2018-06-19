@@ -17,6 +17,12 @@ class peaknet():
         self.meta = dn.load_meta( dataPath )
 
     def detectBatch(self, imgs, thresh=0.1, hier_thresh=.5, nms=.45):
+        if len(imgs.shape) < 3:
+            raise Exception("imgs should be 3D or 4D");
+        elif len(imgs.shape) == 3:
+            imgs = np.reshape( imgs, (1)+imgs.shape )
+        else:
+            pass
         n, m, h, w = imgs.shape
         imgResults = []
         for u in range(n):
