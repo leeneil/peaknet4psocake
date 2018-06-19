@@ -62,5 +62,5 @@ class peaknet():
                 r[counter] = results[u][v][1][1]
                 c[counter] = results[u][v][1][0]
                 counter += 1
-            return s, r, c
+        return s, r, c
         
