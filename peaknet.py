@@ -20,7 +20,7 @@ class peaknet():
         if len(imgs.shape) < 3:
             raise Exception("imgs should be 3D or 4D");
         elif len(imgs.shape) == 3:
-            imgs = np.reshape( imgs, (1)+imgs.shape )
+            imgs = np.reshape( imgs, [1]+list(imgs.shape) )
         else:
             pass
         n, m, h, w = imgs.shape
