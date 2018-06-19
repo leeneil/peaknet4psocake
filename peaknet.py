@@ -29,7 +29,7 @@ class peaknet():
             asicResults = []
             for v in range(m):
                 #print(imgs[u,v,:,:].shape)
-                result = self.detect( imgs[u,v,:,:], thresh=0.1, hier_thresh=.5, nms=.45)
+                result = self.detect( imgs[u,v,:,:], thresh=thresh, hier_thresh=hier_thresh, nms=nms)
                 asicResults.append( result )
             imgResults.append( asicResults )
         return imgResults
