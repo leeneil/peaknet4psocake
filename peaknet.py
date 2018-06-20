@@ -2,11 +2,9 @@ import darknet as dn
 from darknet_utils import *
 
 
-cfgDefault = "/reg/neh/home/liponan/ai/psnet/cfg/newpeaksv5-test.cfg"
-weightDefault= "/reg/neh/home/liponan/ai/psnet/backup/newpeaksv5_6240.weights" 
-# cfgDefault = "/reg/neh/home/liponan/ai/darknet/cfg/-peaks.cfg"
-# weightDefault= "/reg/neh/home/liponan/ai/psnet/backup/yolov3-peaks_6240.weights" 
-dataDefault = "/reg/neh/home/liponan/ai/darknet/cfg/peaks.data"
+cfgDefault = "cfg/newpeaksv5-asic.cfg"
+weightDefault= "weights/newpeaksv5_6240.weights" 
+dataDefault = "cfg/peaks.data"
 
 class peaknet():
     

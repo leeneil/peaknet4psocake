@@ -1,5 +1,5 @@
 classes= 1
-names = peaks.names
+names = cfg/peaks.names
 backup = backup
 eval = coco
 
