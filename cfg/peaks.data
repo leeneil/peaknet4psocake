@@ -1,5 +1,5 @@
 classes= 1
-names = cfg/peaks.names
+names = /reg/neh/home/liponan/source/peaknet4psocake/cfg/peaks.names
 backup = backup
 eval = coco
 
