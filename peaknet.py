@@ -125,7 +125,7 @@ class Peaknet():
         txt.write("names = /reg/neh/home/liponan/ai/darknet/data/peaks.names\n")
         txt.write("backup = backup")
         txt.close()
-        train_log = os.popen("cd /reg/neh/home/liponan/ai/psnet && ./darknet detector train " \
+        train_log = os.popen("cd /reg/neh/home/liponan/ai/psnet-cudnn && ./darknet detector train " \
 				+ os.path.join( cwd, tmp_path, "peaks.data") + " " \
 				+ self.cfgPath + " " + self.weightPath ).read()
         print(train_log)
