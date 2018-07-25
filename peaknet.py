@@ -129,7 +129,7 @@ class Peaknet():
 				+ os.path.join( cwd, tmp_path, "peaks.data") + " " \
 				+ self.cfgPath + " " + self.weightPath ).read()
         print(train_log)
-	return np.zerons( (100,100) )
+	return np.zeros( (100,100) )
 			
 		    
         
