@@ -4,9 +4,9 @@ import cv2
 import os
 
 
-cfgPath = "/reg/neh/home5/liponan/source/peaknet4psocake/cfg/newpeaksv5-asic.cfg"
-dataPath = "/reg/neh/home5/liponan/source/peaknet4psocake/cfg/peaks.data"
-weightPath = "/reg/neh/home5/liponan/source/peaknet4psocake/weights/newpeaksv5_6240.weights"
+cfgDefault = "/reg/neh/home5/liponan/source/peaknet4psocake/cfg/newpeaksv5-asic.cfg"
+dataDefault = "/reg/neh/home5/liponan/source/peaknet4psocake/cfg/peaks.data"
+weightDefault = "/reg/neh/home5/liponan/source/peaknet4psocake/weights/newpeaksv5_6240.weights"
 
 class Peaknet():
     
